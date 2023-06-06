@@ -1,5 +1,5 @@
 {
-  "name": "imdbscraper",
+  "name": "easyimdbscraper",
   "version": "1.0.0",
   "description": "Quickly retrieve information about a tv show or movie on imdb by passing their id.",
   "main": "./dist/index.js",
@@ -13,6 +13,7 @@
     "url": "git+https://github.com/leochappuis/imdbscraper.git"
   },
   "keywords": [
+    "easyimdbscraper",
     "imdb",
     "scrapper",
     "imdb scraper",
