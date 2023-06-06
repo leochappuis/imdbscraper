@@ -1,6 +1,6 @@
 {
   "name": "easyimdbscraper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quickly retrieve information about a tv show or movie on imdb by passing their id.",
   "main": "./dist/index.js",
   "scripts": {
