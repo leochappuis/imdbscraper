@@ -1,0 +1,39 @@
+{
+  "name": "imdbscraper",
+  "version": "1.0.0",
+  "description": "Quickly retrieve information about a tv show or movie on imdb by passing their id.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --outfile=./dist/index.js --platform=node --target=node16.3 --minify",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leochappuis/imdbscraper.git"
+  },
+  "keywords": [
+    "imdb",
+    "scrapper",
+    "imdb scraper",
+    "imdb scrapper",
+    "scraper",
+    "web",
+    "scraping",
+    "scrapper"
+  ],
+  "author": "leochappuis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leochappuis/imdbscraper/issues"
+  },
+  "homepage": "https://github.com/leochappuis/imdbscraper#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.19",
+    "jest": "^29.5.0",
+    "jest-cli": "^29.5.0"
+  }
+}
