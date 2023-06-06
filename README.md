@@ -1,4 +1,4 @@
-**imdbScrapper**
+**imdbscraper**
 
 Provides an easy way to retrieve info about content on IMDB.
 https://www.npmjs.com/package/imdbscraper
