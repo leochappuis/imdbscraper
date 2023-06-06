@@ -1,21 +1,17 @@
-**steamScrapper**
+**imdbScrapper**
 
-Provides an easy way to retrieve info about Apps on steam market.
-https://www.npmjs.com/package/steamscrapper
+Provides an easy way to retrieve info about content on IMDB.
+https://www.npmjs.com/package/imdbscraper
 
-If you don't know the appid corresponding to the app, find it by calling .getAppIdsByTitle
-it takes a name string and a param object with a single property: (exactMatch) -- if set to true, will return only apps in which the title === the name string
-otherwise, will return all apps that have that string in it's name.
+it takes a name string containing the id of the movie, eg tt0118715
 
 ```js
-const steamScrapper = require('steamscrapper')
+const imdbScraper = require('imdbscraper')
 
-async function getInfoAboutGame (gameName) {
-  const gameIds = await steamScrapper.getAppIdsByTitle(gameName, { exactMatch: true })
-  console.log(gameIds)
-  const gameInfo = await steamScraper.getInfoByID(gameIds[0].appid)
-  console.log(gameInfo)
+async function getInfoAboutMovie (id) {
+  const info = await imdbScraper.getInfoByID(id)
+  console.log(info)
 }
 
-getInfoAboutGame()
+getInfoAboutMovie('tt0118715')
 ```
